@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --img-bg: #4070f4;
+  --white-color: #fff;
+  --body-bg: #f4f4f4;
+
+  --primary-border-radius: 24px;
+  --primary-padding: 25px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--body-bg);
+}
+
+.wrapper {
+  background-color: var(--white-color);
+  max-width: 370px;
+  width: 100%;
+  border-radius: var(--primary-border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--primary-padding);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.wrapper::before {
+  content: '';
+  position: absolute; 
+  top: 0;
+  right: 0;
+  background-color: var(--img-bg);
+  width: 100%;
+  height: 36%;
+  border-radius: var(--primary-padding) var(--primary-padding) 0 0;
+}
+
+.profile-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-card .image-profile {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: var(--img-bg);
+  padding: 2px;
+  position: relative;
+}
+
+.image-profile .image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--white-color);
+}
+
+.text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+  color: #333;
+}
+
+.text-data .name {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.text-data .job {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.media-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.media-icons .links-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  width: 34px;
+  background-color: var(--img-bg);
+  margin: 10px 8px 0 8px;
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 18px;
+  border-radius: 50%;
+  background-color: var(--img-bg);
+}
+
+.media-icons .facebook {
+  background-color: #4267b2;
+}
+
+.media-icons .twiter {
+  background-color: #1da1f2;
+}
+
+.media-icons .inst {
+  background-color: #e1306c;
+}
+
+.media-icons .yout {
+  background-color: #ff0000;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.buttons .button {
+  padding: 8px 24px;
+  margin: 16px;
+  border: none;
+  background-color: var(--img-bg);
+  border-radius: 24px;
+  color: var(--white-color);
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all 0.5s ease;
+}
+
+.buttons .button:hover {
+  background-color: #0e4bf1;
+  cursor: pointer;
+}
+
+.analysis {
+  display: flex; 
+  align-items: center;
+  margin-top: 10px;
+}
+
+.analysis .data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  border-right: 2px solid #e7e7e7;
+  color: #333;
+ }
+
+.analysis .data:last-child {
+  border: none;
+}
+
+.data i {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+/*  
+ 
+
+.wrapper:before {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 36%; 
+  width: 100%; 
+  background-color: #4070f4;
+  border-radius: 24px 24px 0 0;
+}
+
+ 
+
+ 
+
+  
