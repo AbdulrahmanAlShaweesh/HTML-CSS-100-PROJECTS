@@ -12,8 +12,10 @@
     
     --google-font-family : "Poppins", sans-serif;
 
-    --primary-border-radius : 50px;
+    --primary-border-radius : 40px;
     --primary-padding: 50px; 
+    --font-weight-normal : 400;
+    --font-weight-bold : 900;
 }
 
 .section-wrapper {
@@ -28,10 +30,11 @@
 }
  
 .section-container {
-    height: 320px; 
-    width: 550px;
+    height: 350px; 
+    width: 600px;
     background-color: var(--dark-color);
     border-radius: var(--primary-border-radius);
+    
 }
 
 .card .card-logo img {
@@ -43,11 +46,57 @@
     align-items: center;
 }
 
+.card .card-logo h4 {
+    font-size: 24px;
+    text-transform: capitalize;
+    margin-left: -15px;
+    font-weight: var(--font-weight-normal);
+}
+
 .card {
     justify-content: space-between;
-    padding: calc(var(--primary-padding) / 3);
+    padding: calc(var(--primary-padding) / 4);
 }
 .card .card-chip {
     width: 150px;
     
+}
+
+.card-body {
+    margin: 0px 40px;
+    display: flex; 
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.card-body .card-name {
+    font-size: 20px;
+    font-weight: var(--font-weight-normal); 
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.card-body p.card-number {
+    font-size: 30px;
+    font-weight: var(--font-weight-normal);
+    letter-spacing: 1.0px; 
+    word-spacing: 1.4px;
+}
+
+
+.card-body .cardholder {
+    font-size: 19px;
+    text-transform: capitalize;
+    margin-top: 50px;
+}
+
+.card-detials-right h4{
+    font-weight: var(--font-weight-normal);
+    text-transform: capitalize;
+    font-size: 18px; 
+    margin-bottom: 5px;
+}
+
+.card-detials-right p {
+    font-size: 22px;
 }
