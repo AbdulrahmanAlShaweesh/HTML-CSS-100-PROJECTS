@@ -27,13 +27,15 @@
     align-items: center;
     justify-content: center;
     color: var(--light-color);
+     
 }
  
 .section-container {
-    height: 350px; 
+    /* height: 350px;  */
     width: 600px;
     background-color: var(--dark-color);
     border-radius: var(--primary-border-radius);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     
 }
 
@@ -67,10 +69,11 @@
     display: flex; 
     align-items: flex-end;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .card-body .card-name {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: var(--font-weight-normal); 
     text-transform: capitalize;
     margin-bottom: 5px;
