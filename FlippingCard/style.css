@@ -6,3 +6,175 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+:root {
+  --bg-color: #121321;
+  --white-color: #fff;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--bg-color);
+  color: var(--white-color);
+  perspective: 1000px;
+}
+
+.wrapper::before {
+  content: "";
+  position: absolute;
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #9c27b0, #f3f5f5);
+  transform: translate(-150px, -100px);
+}
+
+.wrapper::after {
+  content: "";
+  position: absolute;
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #9c27b0, #f3f5f5);
+  transform: translate(150px, 100px);
+}
+
+.wrapper .wrapper-contents {
+  height: 275px;
+  width: 475px;
+  border-radius: 10px;
+  z-index: 100;
+  position: relative;
+  transition: .6s; 
+  transform-style: preserve-3d;
+   perspective: 1000px;
+}
+
+.wrapper-contents:hover {
+    transform: rotateY(180deg);
+}
+
+.card {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(15px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  backface-visibility: hidden;
+}
+
+.font-face img {
+  width: 100px;
+  margin-right: -10px;
+}
+
+.font-face h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.font-face header .chip {
+  width: 100px;
+}
+
+.font-face header,
+.font-face .logo {
+  display: flex;
+  align-items: center;
+}
+
+.font-face header {
+  justify-content: space-between;
+}
+
+.card-detials {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 40px 30px;
+}
+
+.font-face h6 {
+  font-size: 14px;
+  text-transform: capitalize;
+  margin: 5px 0;
+  font-weight: 400;
+}
+
+h5.number {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+h5.name {
+  margin-top: 20px;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.valid-detials h5 {
+  margin-top: -5px;
+}
+
+.back-face {
+  position: relative;
+  padding: 15px 25px 25px 25px;
+  border: none;
+  transform: rotateY(180deg);
+}
+
+.back-face h6 {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.back-face h5 {
+  font-size: 10px;
+  margin-top: 15px;
+  font-weight: 400;
+}
+
+.back-face .magntic-strip {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  height: 45px;
+  width: 100%;
+  background-color: #000;
+}
+
+.back-face .signture {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 90px;
+  height: 45px;
+  width: 85%;
+  background: repeating-linear-gradient(
+    #fff,
+    #fff 3px, 
+    #efefef 0px,
+    #efefef 9px
+  );
+  border-radius: 6px;
+}
+
+.signture i {
+  color: #000;
+  font-size: 14px;
+  padding: 4px 6px;
+  margin-right: -30px;
+  background-color: #fff;
+  border-radius: 5px;
+  z-index: -1;
+}
