@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* common style */
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+}
+
+/* start header */
+.header {
+  background-color: grey;
+}
+
+.header .container {
+  display: flex;
+}
+
+.header .logo {
+  width: 40%;
+}
+
+.header .logo img {
+  width: 20%;
+}
+
+.header .nav {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+}
+
+.header .nav li a {
+  color: #fff;
+  text-decoration: none;
+  padding:20px 20px;
+}
